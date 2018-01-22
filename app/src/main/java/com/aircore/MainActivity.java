@@ -8,6 +8,7 @@ import com.aircore.view.ControlView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //test
     private ControlView view;
 
     @Override
