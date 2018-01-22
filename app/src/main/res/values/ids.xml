@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="mHintView" type="id"/>
+    <item name="scrollView" type="id"/>
+    <item name="loadheadview" type="id"/>
+    <item name="viewpager" type="id"/>
+    <item name="group_detail_bottom" type="id"/>
+    <item name="ExpressAddrView_NPLayout" type="id"/>
+    <item name="car_tv_num" type="id"/>
+    <item name="tv_flowMount" type="id"/>
+
+    <item name="main_header_view_down_icon" type="id"/>
+    <item name="control_viewpager" type="id"/>
+    <item name="EleRemindCtrViewID" type="id"/>
+    <item name="mainPageTopView" type="id"/>
+    <item name="EleRemindImage" type="id"/>
+    <item name="mGlGraphicLockView" type="id"/>
+    <item name="headView_textView" type="id"/>
+    <item name="headView" type="id"/>
+    <item name="about" type="id"/>
+    <item name="ijkVideoView" type="id"/>
+
+
+    <!-- ID used when defining the content layout in XML. -->
+    <item name="mdContent" type="id" />
+
+    <!-- ID used when defining the menu layout in XML. -->
+    <item name="mdMenu" type="id" />
+
+    <!-- The ID of the content container. -->
+    <item name="md__content" type="id" />
+
+    <!-- The ID of the menu container. -->
+    <item name="md__menu" type="id" />
+
+    <!-- The ID of the drawer. -->
+    <item name="md__drawer" type="id" />
+
+    <!-- Used with View#setTag(int) to specify a position for the active view. -->
+    <item name="mdActiveViewPosition" type="id" />
+
+    <item name="md__translationX" type="id" />
+
+    <item name="md__translationY" type="id" />
+
+</resources>
