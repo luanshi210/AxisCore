@@ -59,5 +59,17 @@
             
 ```
 
+* 以上是View的适配，因为用了等比缩放，就直接忽略了屏幕密度，下面说说字体的适配，这个就和屏幕密度有关了，看下面
+
+```
+            public static float scaleTextSize(int textSize) {
+            		return scale(textSize) / scaledDensity;
+            	}            
+```
+
+
+
+
+
 
 
