@@ -1,5 +1,5 @@
 # 欢迎使用 Axis 适配库
-![cmd-markdown-logo](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516697018620&di=8cdfaae4ff859caf7d18307e2a0f4f11&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20170822%2F4a8bcbb68e054b6fb49ffae7cb430e63.gif)
+![cmd-markdown-logo](https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1991354765,3873757137&fm=27&gp=0.jpg)
 
 在Android日常开发中，我们经常会遇到各种不同屏幕尺寸的手机，适配是一件很让人头疼的事情，特别是刚接触Android开发的童鞋，**Axis** 是我在开发中常用的方案，一套图（1920*1080）来适配所有的机型。主要是运用了等比缩放的方案，但是在实际开发中，只做X轴的等比，Y轴超出部分用滚动条。
 这样就能避免，XY轴同时缩放带来的变形问题。
