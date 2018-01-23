@@ -1,18 +1,5 @@
-![mahua](mahua-logo.jpg)
-##MaHua是什么?
-一个在线编辑markdown文档的编辑器
+![cmd-markdown-logo](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516695325751&di=038f25aa68ac3ca9af641d512048c068&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D2936359117%2C1769401831%26fm%3D214%26gp%3D0.jpg)
+##AirCore是什么?
+一个用Java代码动态布局的适配方案。
+##AirCore怎么用？
 
-向Mac下优秀的markdown编辑器mou致敬
-
-##MaHua有哪些功能？
-
-* 方便的`导入导出`功能
-    *  直接把一个markdown的文本文件拖放到当前这个页面就可以了
-    *  导出为一个html格式的文件，样式一点也不会丢失
-* 编辑和预览`同步滚动`，所见即所得（右上角设置）
-* `VIM快捷键`支持，方便vim党们快速的操作 （右上角设置）
-* 强大的`自定义CSS`功能，方便定制自己的展示
-* 有数量也有质量的`主题`,编辑器和预览区域
-* 完美兼容`Github`的markdown语法
-* 预览区域`代码高亮`
-* 所有选项自动记忆
