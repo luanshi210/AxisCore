@@ -28,8 +28,8 @@ public class ControlView extends RelativeLayout {
     }
     public void init(final Context context){
         dropDownView = new BaseRelativeLayout(context);
+        dropDownView.setBackgroundColor(0xFF000000);
         dropDownView.setTag("dropDownView");
-        dropDownView.setBackgroundResource(R.drawable.home_control_bg);
         RelativeLayout.LayoutParams dropDownView_Params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
         super.addView(dropDownView,dropDownView_Params);
 
@@ -38,8 +38,6 @@ public class ControlView extends RelativeLayout {
         RelativeLayout.LayoutParams bodyLayout_Params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
         dropDownView.addView(bodyLayout,bodyLayout_Params);
         mIndicator = new ViewPagerIndicator(context);
-
-
 
 
         mIndicator.setBackgroundColor(0x00000000);
@@ -57,18 +55,6 @@ public class ControlView extends RelativeLayout {
             }
 
             public void onPageSelected(int i) {
-                if(i == 0){
-                    dropDownView.setBackgroundResource(R.drawable.home_control_bg);
-                }else if(i == 1){
-                    dropDownView.setBackgroundResource(R.drawable.air_bg);
-                }else if(i == 3){
-                    dropDownView.setBackgroundResource(R.drawable.light_bg);
-
-                }else{
-                    dropDownView.setBackgroundResource(0);
-                    dropDownView.setBackgroundColor(0xFF000000);
-
-                }
 
             }
         });
