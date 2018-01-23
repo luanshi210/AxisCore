@@ -13,17 +13,51 @@
 
 
 * 获取屏幕 w,h以及scaledDensity。
-```
-DisplayMetrics metrics = new DisplayMetrics();
-WindowManager mWindowManager  = (WindowManager) AxisConfig.mContext .getSystemService(Context.WINDOW_SERVICE);
-mWindowManager.getDefaultDisplay().getMetrics(metrics);
-w = metrics.widthPixels;
-h = metrics.heightPixels;
-scaledDensity = metrics.scaledDensity;
 
 ```
+            DisplayMetrics metrics = new DisplayMetrics();
+            WindowManager mWindowManager  = (WindowManager) AxisConfig.mContext .getSystemService(Context.WINDOW_SERVICE);
+            mWindowManager.getDefaultDisplay().getMetrics(metrics);
+            w = metrics.widthPixels;
+            h = metrics.heightPixels;
+            scaledDensity = metrics.scaledDensity;
+
+```
+
+* 再来看一下核心部分，X轴与Y轴的等比缩放方法
+
+```
+            //Config.width  Config.height就是我们UI妹子设计的UI图宽高啦，目前一般都是（1920*1080）
+            
+            public static int scaleX(int x, float ox) {
+            		return (int) (x * (w - w * ox) / (Config.width - Config.width * ox));
+            	}
+            
+            public static int scaleY(int y, float oy) {
+            		return (int) (y * (h - h * oy) / (Config.height - Config.height * oy));
+            	}
+
+```
+
         
-
+* 用Android 自带API 动态添加View
+```
+            //这样就添加了一个View
+            
+            RelativeLayout middleLayout = new RelativeLayout(getActivity());
+     		middleLayout.setBackgroundColor(0xFF20B2AA);
+     		RelativeLayout.LayoutParams middleLayout_Params = new RelativeLayout.LayoutParams(Axis.scaleX(800), Axis.scaleX(800));
+     		middleLayout_Params.addRule(RelativeLayout.CENTER_IN_PARENT);
+     		view.addView(middleLayout,middleLayout_Params);
+     
+     		middleLayout = new RelativeLayout(getActivity());
+     		middleLayout.setBackgroundColor(0xFF1874CD);
+     		middleLayout_Params = new RelativeLayout.LayoutParams(Axis.scaleX(400),Axis.scaleX(400));
+     		middleLayout_Params.addRule(RelativeLayout.CENTER_HORIZONTAL);
+     		middleLayout_Params.setMargins(0,Axis.scaleX(250),0,0);
+     		view.addView(middleLayout,middleLayout_Params);              
+            
+```
 
 
 
