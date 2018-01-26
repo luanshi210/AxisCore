@@ -119,11 +119,11 @@ bintray {
     configurations = ['archives']
     pkg {
         //这里的repo值必须要和你创建Maven仓库的时候的名字一样
-        repo = "linqiRepository"
+        repo = "maven"
         //发布到JCenter上的项目名字
         name = libName
         //项目描述
-        desc = 'A Android  UI fitting scheme.'
+        desc = 'A Android  UI fitting scheme..'
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
