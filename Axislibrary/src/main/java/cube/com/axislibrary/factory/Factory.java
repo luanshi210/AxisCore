@@ -90,10 +90,9 @@ public class Factory {
 	}
 
 	/**
-	 * 创建一个相对布局
-	 * @param w
-	 * @param h
-     * @return
+	 * @param w 宽度
+	 * @param h 高度
+     * @return LayoutParams
      */
 	public static RelativeLayout.LayoutParams createRLParams(int w, int h) {
 		int wi,hi;
@@ -117,9 +116,9 @@ public class Factory {
 
 	/**
 	 * 创建一个线性布局
-	 * @param w
-	 * @param h
-	 * @return
+	 * @param w 宽度
+	 * @param h 高度
+	 * @return LayoutParams
 	 */
 	public static LinearLayout.LayoutParams createLLParams(int w, int h) {
 		int wi,hi;
