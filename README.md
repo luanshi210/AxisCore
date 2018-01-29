@@ -4,6 +4,9 @@
 在Android日常开发中，我们经常会遇到各种不同屏幕尺寸的手机，适配是一件很让人头疼的事情，特别是刚接触Android开发的童鞋，**Axis** 是我在开发中常用的方案，一套图（1920*1080）来适配所有的机型。主要是运用了等比缩放的方案，但是在实际开发中，只做X轴的等比，Y轴超出部分用滚动条。
 这样就能避免，XY轴同时缩放带来的变形问题。
 
+### AndroidStudio jcenter 加载：
+ compile 'cube.com.axislibrary:Axislibrary:1.0.0@aar'
+
 ### Axis是什么?
 一个用Java代码动态布局的适配方案。
 
